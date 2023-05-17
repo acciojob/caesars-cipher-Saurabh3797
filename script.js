@@ -15,10 +15,10 @@ function rot13(encodedStr){
   // Only change code below this line
 	for(i=0; i<encodedStr.length; i++){
 		if(lookup [encodedStr[i]] ) === undefiend {
-			decodedArr = encodedStr[i];
+			decodedArr.push(encodedStr[i]);
 		}
 		else{
-			decodedArr = lookup[encodedStr[i]];
+			decodedArr.push(lookup[encodedStr[i]]);
 		}
 	}
 
